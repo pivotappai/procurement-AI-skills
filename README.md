@@ -1,6 +1,6 @@
 # Procurement AI skills
 
-Ready-to-use AI skills for procurement teams. They work in Claude, ChatGPT, Gemini, and any other AI assistant that supports skills. Free, by [Pivot](https://www.pivotapp.ai) × Pure Procurement.
+Ready-to-use AI skills for procurement teams. They work in Claude, ChatGPT, Gemini, and any other AI assistant that supports skills. Free by [Pivot](https://www.pivotapp.ai) × Pure Procurement.
 
 Each skill turns a common procurement task into a short, structured answer you can share: compare supplier bids, decide whether to buy or build an AI tool, or pick the KPIs worth tracking. They're built for indirect spend and written in plain language, so business teams can use them too.
 
