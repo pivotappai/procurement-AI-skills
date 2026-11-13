@@ -26,6 +26,7 @@ The skill collects and organizes what the user, their documents, and their tools
 
 ## When to use this skill
 
+Use it once before the other procurement skills, then again whenever something changes: a new entity, system, approver, policy or priority.
 Example requests:
 
 - "Set up our procurement context."
