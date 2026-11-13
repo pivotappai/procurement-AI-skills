@@ -13,7 +13,7 @@ description: Builds or updates a one-page procurement context file (procurement-
 
 This skill builds a one-page file about how the company procures. The other procurement skills (rfp-evaluator, ai-build-or-buy, procurement-kpis) read it first, so users don't repeat the basics every time. 
 
-The skill collects and organises what the user, their documents and their tools say. It never guesses facts about the company.
+The skill collects and organizes what the user, their documents, and their tools say. It never guesses facts about the company.
 
 **Key capabilities:**
 
