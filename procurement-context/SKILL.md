@@ -56,7 +56,7 @@ Example requests:
 
 4. **Follow the choice:**
    - **Upload documents:** wait for the files, read every one in full, then go to Phase 2.
-   - **Connected tool:** choosing this option is the user's permission to read the tools they named, and only those. Search them for the sources in the table below. If no tool is connected, say so in one line, tell them they can connect one in their assistant's connector settings and come back, and offer option 1 or 3 meanwhile.
+   - **Connected tool:** choosing this option is the user's permission to read the tools they named, and only those. Search them for the sources in the table below, using the company's name. Skip content that clearly belongs to another company or isn't about procurement (e.g. marketing drafts), and say in one line what you skipped. If no tool is connected, say so in one line, tell them they can connect one in their assistant's connector settings and come back, and offer option 1 or 3 meanwhile.
    - **Questions:** go straight to Phase 3, Round 1.
    - **Blank template:** see "Blank template".
 
@@ -87,13 +87,13 @@ From an ERP or procurement tool, take totals and counts only: never invoice-leve
 
 **Round 1 (must-haves).** Ask only the questions the sources didn't answer, in one message, five at most:
 
-1. Which legal entities do you buy for, and which ERP does each use?
-2. What are your buying rules: approval levels, when you need quotes or an RFP, and who else signs off (IT, Security, Legal, Finance)?
+1. What are your buying rules: approval levels, when you need quotes or an RFP, and who else signs off (IT, Security, Legal, Finance)?
+2. Which legal entities do you buy for, and which ERP does each use?
 3. Which AI tools does the company already pay for?
 4. What are leadership's priorities for procurement this year?
 5. What projects or rollouts are under way or planned (a new tool, process or policy), and when?
 
-Accept short answers. Only ask a follow-up if an answer is unclear.
+Connected tools rarely show approval thresholds or sign-off conditions, so expect to ask question 1 even when tools filled the rest. Accept short answers. Only ask a follow-up if an answer is unclear.
 
 **Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: industry and size, entities that buy mostly on cards, spend totals and main categories, share of spend on a PO, whether contracts are kept in one repository, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, limits on contract length or payment terms. If the user says later, finish with what you have.
 
@@ -151,7 +151,7 @@ Last updated: [date] · Filled in by: [role]
 ## How buying works today
 - Channels people actually use today:
 - Official intake route:
-- Share of spend on a PO: [and how often POs are raised after the invoice]
+- Share of spend on a PO: [by value; if only a count of invoices is available, give that and say "by count"; and how often POs are raised after the invoice]
 
 ## Buying rules
 - Approval levels:
