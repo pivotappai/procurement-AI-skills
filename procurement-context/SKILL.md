@@ -33,7 +33,7 @@ Example requests:
 - "Create the context file for the procurement skills."
 - "Here's our procurement policy. Build our context from it."
 - "We moved to a new ERP in Germany. Update our context."
-- "Fill in the procurement context template for me."
+- "Give me a blank procurement context template to fill in."
 
 ## Framework
 
@@ -167,10 +167,6 @@ End with these lines, adapted to the user's assistant:
 
 Otherwise, attach it to each chat. To share it with your team, share the Project. Only use a company-approved AI account for this file: it holds internal rules and spend figures."
 
-## Reference documents
+## Blank template
 
-### assets/procurement-context-template.md
-
-The same format as above, for people who prefer to fill it in by hand.
-
-**Use when:** The user asks for a blank template instead of the interview.
+If the user asks for a blank template to fill in by hand instead of the interview, give them the output format above with every field left empty, then the "After delivery" lines.
