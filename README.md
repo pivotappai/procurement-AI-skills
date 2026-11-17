@@ -42,8 +42,7 @@ Menus change often. If a step doesn't match what you see, check your assistant's
 ```
 skill-name/
 ├── SKILL.md       # Instructions: when to use it, the steps, the rules and the output format
-├── references/    # Supporting guides the skill reads (scoring scales, pricing, red flags…)
-└── assets/        # Templates (procurement-context only)
+└── references/    # Supporting guides the skill reads (scoring scales, pricing, red flags…)
 ```
 
 ## Credits
