@@ -140,7 +140,7 @@ Whatever the option, clean data and a clear process matter. If either is missing
 
 **Goal:** Know what the job is, what's already in place, and what each option covers.
 
-1. **Read the context file first**, if it's attached or in the project (usually `procurement-context.md`). It covers the AI tools already paid for, who builds internal tools, security and AI rules, who approves AI tools, buying rules, and how teams send requests to procurement. Don't ask for anything it already answers. If there's no context file, carry on, and mention once at the end that the `procurement-context` skill can create one.
+1. **Read the context file first**, if it's attached or in the project (usually `procurement-context.md`). It covers the AI tools already paid for, who builds internal tools, security and AI rules, who approves AI tools, buying rules, and how teams send requests to procurement. Don't ask for anything it already answers. If there's no context file, carry on without it. As the very last line of the answer, add this tip, translated into the user's language: "Tip: say 'Set up my procurement context' to create a one-page context file. I'll then use your AI tools, security rules and approvers without asking."
 2. **Read every attached document in full**, and check that you have the following:
 
 | Input | Needed? |
