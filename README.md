@@ -28,7 +28,7 @@ Each skill turns a common procurement task into a short, structured answer you c
 Each skill follows the open [Agent Skills](https://agentskills.io) format (a folder with a `SKILL.md` file), so the same folder works in every assistant that supports skills.
 
 1. Download this repository (**Code → Download ZIP**) and unzip it.
-2. Pick the skill folder you want, e.g. `rfp-evaluator`. Some assistants want it zipped, with `SKILL.md` at the top of the zip.
+2. Pick the skill folder you want, e.g. `rfp-evaluator`. Some assistants want it zipped: zip the whole folder, so the zip holds the skill folder with `SKILL.md` inside it.
 3. Add it to your assistant:
    - **Claude:** Settings → Capabilities → Skills, then upload the zip. In Claude Code, copy the folder into `~/.claude/skills/`.
    - **ChatGPT:** Plugins → Skills → Create → Upload from your computer. Available on Business, Enterprise and Edu plans; your admin may need to turn on skill uploads.
@@ -42,7 +42,7 @@ Menus change often. If a step doesn't match what you see, check your assistant's
 ```
 skill-name/
 ├── SKILL.md       # Instructions: when to use it, the steps, the rules and the output format
-└── references/    # Supporting guides the skill reads (scoring scales, pricing, red flags…)
+└── references/    # Supporting guides some skills read (scoring scales, pricing, red flags…). Not every skill has one.
 ```
 
 ## Credits
