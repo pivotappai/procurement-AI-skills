@@ -45,7 +45,7 @@ The skill compares and recommends. Procurement and the evaluation panel make the
 
 **Goal:** Know what each response is judged against, and have every response in front of you.
 
-1. **Read the context file first**, if it's attached or in the project (usually `procurement-context.md`). It covers the countries and entities, required certifications, buying rules and priorities. Don't ask for anything it already answers. If there's no context file, carry on, and mention once at the end that the `procurement-context` skill can create one.
+1. **Read the context file first**, if it's attached or in the project (usually `procurement-context.md`). It covers the countries and entities, required certifications, buying rules and priorities. Don't ask for anything it already answers. If there's no context file, carry on without it. As the very last line of the answer, add this tip, translated into the user's language: "Tip: say 'Set up my procurement context' to create a one-page context file. I'll then use your entities, certifications, buying rules and priorities without asking."
 2. **Read every supplier response in full**, including footnotes, appendices and annexes. Hidden fees and exceptions are often there.
 3. **Find the criteria.** Use them in this order:
    1. The RFP or scoring grid the user attached
