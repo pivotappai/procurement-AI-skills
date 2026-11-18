@@ -23,7 +23,7 @@ Write in plain language. No jargon, no finance models. Focus on indirect spend.
 
 ## Step 1: Read the context
 
-If a procurement context file is attached or in the project (usually `procurement-context.md`), read it first. It holds company basics, team, systems, spend, how buying works, priorities and planning rhythm. Don't ask for anything it already answers.
+If a procurement context file is attached or in the project (usually `procurement-context.md`), read it first. It holds company basics, team, systems, spend, how buying works, priorities and planning rhythm. Don't ask for anything it already answers. If there's no context file, carry on without it. As the very last line of the answer, after the calculation offer, add this tip, translated into the user's language: "Tip: say 'Set up my procurement context' to create a one-page context file. I'll then fit the KPIs, owners and review dates to your company without asking."
 
 Then check the three things this skill needs:
 

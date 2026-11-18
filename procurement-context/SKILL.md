@@ -1,11 +1,11 @@
 ---
 name: procurement-context
-description: Builds or updates a one-page procurement context file (procurement-context.md) covering the company's entities, systems, spend, buying rules, approvers, AI and security rules, priorities and planning rhythm, so the other procurement skills don't have to ask. Use when someone asks to set up, create, fill in or update their procurement context, or when another procurement skill says there's no context file. Can pull answers from attached documents or connected tools, then asks only for what's missing.
+description: Builds or updates a one-page procurement context file (procurement-context.md) covering the company's entities, systems, spend, buying rules, approvers, AI and security rules, priorities and planning rhythm, so the other procurement skills don't have to ask. Use when someone says "Set up my procurement context" or asks to set up, start, create, fill in or update their procurement context, or when another procurement skill says there's no context file. Starts by asking how to fill it in: uploaded documents, a connected tool (MCP connector), or a few quick questions.
 ---
 
 # Procurement context
 
-**Version 1.0** | November 2026 | Pivot × Pure Procurement
+**Version 1.1** | November 2026 | Pivot × Pure Procurement
 
 ---
 
@@ -17,18 +17,21 @@ The skill collects and organizes what the user, their documents, and their tools
 
 **Key capabilities:**
 
+- Let the user choose how to fill it in: upload documents, pull from a connected tool, or answer questions
 - Pull answers from attached documents (procurement policy, approval matrix, AI policy, org chart, spend export)
 - Pull answers from connected tools (document storage, ERP, procurement tools), with the user's permission
 - Ask only for what's still missing, in two short rounds at most
 - Flag conflicting or outdated sources instead of picking one silently
 - Write the file in a fixed format the other skills can read
 - Update an existing file when something changes
+- Point the user to the other procurement skills once the file is saved
 
 ## When to use this skill
 
-Use it once before the other procurement skills, then again whenever something changes: a new entity, system, approver, policy or priority.
+Use it first, right after the skills are installed, then again whenever something changes: a new entity, system, approver, policy or priority.
 Example requests:
 
+- "Set up my procurement context."
 - "Set up our procurement context."
 - "Create the context file for the procurement skills."
 - "Here's our procurement policy. Build our context from it."
@@ -37,14 +40,27 @@ Example requests:
 
 ## Framework
 
-### Phase 1: Check what's available
+### Phase 1: Choose how to fill it in
 
-**Goal:** Use what already exists before asking anything.
+**Goal:** Let the user pick the fastest way in, and use what already exists before asking anything.
 
 1. **Existing context file.** If procurement-context.md is attached or in the project, switch to update mode (see Phase 4).
-2. **Attached documents.** Read every attached document in full.
-3. **Connected tools.** If a document, ERP or procurement tool is connected, ask once before reading: "I can see [tools] connected. Want me to look there first? I'll only read, and I'll show you what I found before using it." If the user says no, don't read them.
-4. **Nothing available.** Offer the fast path in one message: "I'll build a one-page context file the other procurement skills read, so you won't repeat yourself. If you have a procurement policy, approval matrix or AI policy, attach it and I'll pull the answers from it. Otherwise, I'll ask five quick questions."
+2. **Documents already attached.** If the user attached documents with the request, read every one in full and go to Phase 2. Don't ask how to fill it in.
+3. **Otherwise, ask first, in one message.** Name the tools you can see connected, if any:
+
+   "I'll build a one-page context file that the other procurement skills read, so you won't repeat yourself. How do you want to fill it in?
+   1. **Upload documents:** procurement policy, approval matrix, AI policy, org chart or spend export. I'll pull the answers from them.
+   2. **Pull from a connected tool:** [connected tools, or "for example Drive, SharePoint, Notion, your ERP or procurement tool"]. I'll only read, and I'll show you what I found before using it.
+   3. **Answer a few questions:** five quick ones, about five minutes.
+   You can mix them. If you'd rather fill it in by hand, I can give you a blank template."
+
+4. **Follow the choice:**
+   - **Upload documents:** wait for the files, read every one in full, then go to Phase 2.
+   - **Connected tool:** choosing this option is the user's permission to read the tools they named, and only those. Search them for the sources in the table below, using the company's name. Skip content that clearly belongs to another company or isn't about procurement (e.g. marketing drafts), and say in one line what you skipped. If no tool is connected, say so in one line, tell them they can connect one in their assistant's connector settings and come back, and offer option 1 or 3 meanwhile.
+   - **Questions:** go straight to Phase 3, Round 1.
+   - **Blank template:** see "Blank template".
+
+If a tool is connected but the user didn't choose it, don't read it.
 
 What to look for in each source:
 
@@ -71,21 +87,21 @@ From an ERP or procurement tool, take totals and counts only: never invoice-leve
 
 **Round 1 (must-haves).** Ask only the questions the sources didn't answer, in one message, five at most:
 
-1. Which legal entities do you buy for, and which ERP does each use?
-2. What are your buying rules: approval levels, and when do you need quotes or an RFP?
-3. Who else signs off on purchases (IT, Security, Legal, Finance)?
-4. Which AI tools does the company already pay for?
-5. What are leadership's priorities for procurement this year?
+1. What are your buying rules: approval levels, when you need quotes or an RFP, and who else signs off (IT, Security, Legal, Finance)?
+2. Which legal entities do you buy for, and which ERP does each use?
+3. Which AI tools does the company already pay for?
+4. What are leadership's priorities for procurement this year?
+5. What projects or rollouts are under way or planned (a new tool, process or policy), and when?
 
-Accept short answers. Only ask a follow-up if an answer is unclear.
+Connected tools rarely show approval thresholds or sign-off conditions, so expect to ask question 1 even when tools filled the rest. Accept short answers. Only ask a follow-up if an answer is unclear.
 
-**Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: entities that buy mostly on cards, spend totals and main categories, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, contract-length limits. If the user says later, finish with what you have.
+**Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: industry and size, entities that buy mostly on cards, spend totals and main categories, share of spend on a PO, whether contracts are kept in one repository, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, limits on contract length or payment terms. If the user says later, finish with what you have.
 
 ### Phase 4: Confirm and deliver
 
 **Goal:** A file the user has checked, saved where the other skills can read it.
 
-1. Show the file. In the chat (not in the file), list the source of each pre-filled answer, e.g. "Approval levels: Delegation of Authority 2025, section 4."
+1. Show the file. In the chat (not in the file), list the source of each pre-filled answer, e.g. "Approval levels: Delegation of Authority 2025, section 4." If you don't know the user's role yet, ask for it here, for "Filled in by". If they don't say, write "Not stated".
 2. Apply the user's corrections.
 3. Deliver procurement-context.md in the exact format below, with today's date.
 4. End with where to save it (see "After delivery").
@@ -94,8 +110,8 @@ Accept short answers. Only ask a follow-up if an answer is unclear.
 
 ## Rules
 
-- **Never invent.** Every line comes from the user, an attached document or a connected tool. If something isn't known, write "Not stated" in that field and list the field under "Not stated yet" at the end of the file.
-- **Ask before reading connected tools, and only read.** Never create, change or send anything.
+- **Never invent.** Every line comes from the user, an attached document or a connected tool. If something isn't known, write "Not stated" in that field. Under "Not stated yet" at the end of the file, list only the field labels, on one line, so the list doesn't eat into the word limit.
+- **Read connected tools only when the user chose that option, and only read.** Never create, change or send anything.
 - **Show the source of every pre-filled answer** in the chat, so the user can check it.
 - **Flag conflicts and old documents.** Don't silently pick one.
 - **Keep it to one page:** 500 words at most, short lines, no explanations.
@@ -135,7 +151,7 @@ Last updated: [date] · Filled in by: [role]
 ## How buying works today
 - Channels people actually use today:
 - Official intake route:
-- Share of spend on a PO: [and how often POs are raised after the invoice]
+- Share of spend on a PO: [by value; if only a count of invoices is available, give that and say "by count"; and how often POs are raised after the invoice]
 
 ## Buying rules
 - Approval levels:
@@ -153,19 +169,27 @@ Last updated: [date] · Filled in by: [role]
 - Planning rhythm: [when objectives are set, review dates]
 
 ## Not stated yet
-- [Every field marked "Not stated" above]
+[Field labels only, comma-separated, e.g. Fiscal year, Main categories]
 ```
 
 ## After delivery
 
-End with these lines, adapted to the user's assistant:
+If you can write to the user's project folder (for example in Claude Code or Cowork), save the file there as procurement-context.md and say where. Otherwise, end with these lines, adapted to the user's assistant:
 
-"Save this file where the other procurement skills can read it:
-- **Claude:** add it to a Project's files, and run your procurement chats inside that Project.
-- **ChatGPT:** add it to a Project's files.
-- **Gemini:** add it to a Gem's knowledge.
+"Last step: save this file where the other procurement skills can read it. Download it, then:
+- **Claude:** add it to your Project's files, and run your procurement chats inside that Project.
+- **ChatGPT:** add it to your Project's files.
+- **Gemini:** add it to your Gem's knowledge.
 
 Otherwise, attach it to each chat. To share it with your team, share the Project. Only use a company-approved AI account for this file: it holds internal rules and spend figures."
+
+Then show what to do next, in a new chat in the same Project:
+
+"Your context is ready. Here's what you can do with it:
+- **Compare supplier bids** (rfp-evaluator): "Compare these three responses to our RFP."
+- **Decide whether to buy or build an AI tool** (ai-build-or-buy): "Marketing wants this AI content tool. Should we approve it?"
+- **Pick the KPIs worth tracking** (procurement-kpis): "Which KPIs should we track for our new intake process?"
+If a skill isn't installed yet, add it the same way you added this one."
 
 ## Blank template
 
