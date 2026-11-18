@@ -34,6 +34,7 @@ In that case, show the total for what's priced, say clearly what's missing, and 
 ## 4. Baselines
 
 - If the user gives a current price or budget, show it next to the totals.
+- If you stretch a current price or budget over the term to compare it, label it "Assumption:" and show the sum (e.g. "Assumption: €40k a year × 3 years = €120k").
 - If the comparison isn't like for like (e.g. buying devices outright versus leasing with services included), say what's missing for a fair comparison rather than declaring a winner.
 
 ## 5. Record the first prices
