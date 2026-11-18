@@ -46,7 +46,7 @@ When price is a weighted criterion, score it with a simple, visible rule:
 
 ## 5. Weighted score
 
-Weighted score = the sum of (score × weight) across all criteria. Show it to one decimal.
+Weighted score = the sum of (score × weight) across all criteria. Show it to one decimal, rounding half up (3.45 becomes 3.5).
 
 If two suppliers are within 0.3 of each other, call it close, and name what would decide it (a clarification answer, a reference call, a demo).
 
