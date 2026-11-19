@@ -5,7 +5,7 @@ description: Builds or updates a one-page procurement context file (procurement-
 
 # Procurement context
 
-**Version 1.0** | November 2026 | Pivot × Pure Procurement
+By Pivot × Pure Procurement
 
 ---
 
@@ -161,11 +161,10 @@ Last updated: [date] · Filled in by: [role]
 End with these lines, adapted to the user's assistant:
 
 "Save this file where the other procurement skills can read it:
-- **Claude:** add it to a Project's files, and run your procurement chats inside that Project.
-- **ChatGPT:** add it to a Project's files.
-- **Gemini:** add it to a Gem's knowledge.
+- **Claude or ChatGPT:** add it to a Project's files, and run your procurement chats inside that Project.
+- **Gemini, or a plan without Projects:** attach it at the start of each procurement chat.
 
-Otherwise, attach it to each chat. To share it with your team, share the Project. Only use a company-approved AI account for this file: it holds internal rules and spend figures."
+To share it with your team, share the Project. Only use a company-approved AI account for this file: it holds internal rules and spend figures."
 
 ## Blank template
 
