@@ -5,7 +5,7 @@ description: Compares supplier responses to an RFP, tender or quote request side
 
 # RFP evaluator
 
-**Version 1.0** | November 2026 | Pivot × Pure Procurement
+By Pivot × Pure Procurement
 
 ---
 
