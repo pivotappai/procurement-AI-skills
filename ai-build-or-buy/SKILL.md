@@ -5,7 +5,7 @@ description: Pressure-tests a request for an AI tool or capability and recommend
 
 # AI build or buy
 
-**Version 2.0** | November 2026 | Pivot × Pure Procurement
+By Pivot × Pure Procurement
 
 ---
 
