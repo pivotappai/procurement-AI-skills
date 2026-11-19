@@ -10,7 +10,7 @@ By Pivot × Pure Procurement
 
 ## Overview
 
-This skill helps a Head of Procurement pick the few KPIs worth tracking for their situation, and say when to measure each one. Every KPI comes with a counterweight, an owner and a review rhythm. The answer takes two minutes to read and is ready to share with a CFO. It's built for indirect spend.
+This skill helps procurement teams pick the few KPIs worth tracking for their situation, and say when to measure each one. Every KPI comes with a counterweight, an owner and a review rhythm. The answer takes two minutes to read and is ready to share with a CFO. It's built for indirect spend.
 
 The skill recommends. Procurement decides which KPIs to adopt and which targets to set.
 
@@ -49,19 +49,19 @@ The skill recommends. Procurement decides which KPIs to adopt and which targets 
 
 | Need | Why |
 |---|---|
-| What's happening and when (a rollout, a new role, a cost programme, a review coming up) | Picks the situation and the timing |
+| What's happening and when (a rollout, a new role, a cost program, a review coming up) | Picks the situation and the timing |
 | The main objective | Picks the KPIs |
 | Who sees the results, where and when | Sets owners and the review rhythm |
 
 **Ask only if the main objective is unclear**, in one short message (three questions at most). Otherwise go ahead, and label the rest "Assumption:". Don't ask for data.
 
 3. **Pick the situation.** Match the user to one of six situations in the "Objectives map" appendix:
-   1. Starting from zero
-   2. Rolling out a new process or tool
-   3. Leadership wants to see what procurement delivers
-   4. Savings without hurting quality
-   5. More spend under control
-   6. Grow without hiring (automation and AI)
+   1. **Starting from zero:** no procurement KPIs yet, or a new procurement lead setting up measurement for the first time.
+   2. **Rolling out a new process or tool:** launching (or just launched) intake, purchase-to-pay or approvals, and needing to show it works and is used.
+   3. **Leadership wants to see what procurement delivers:** the CFO or board wants numbers on procurement's impact, often ahead of a review.
+   4. **Savings without hurting quality:** a cost or savings target, without ending up with worse suppliers or services.
+   5. **More spend under control:** too much spend bypasses procurement: invoices without POs, buying outside the process, or entities buying on cards.
+   6. **Grow without hiring (automation and AI):** handling more requests with the same team, using automation or AI agents.
 
    If two apply, pick the main one and borrow at most one pair. Use the "Words to translate" table for vague goals ("quality", "efficiency", "compliance").
 
