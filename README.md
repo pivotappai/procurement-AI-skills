@@ -1,6 +1,6 @@
 # Procurement AI skills
 
-Ready-to-use AI skills for procurement teams. They work in Claude, ChatGPT, Gemini and other AI assistants, on any plan: as skills where your plan supports them, or as a single file you attach. Free by [Pivot](https://www.pivotapp.ai) and Pure Procurement.
+Ready-to-use AI skills for procurement teams. They work in Claude, ChatGPT, Gemini and any other AI assistant that supports skills, on plans that include skills. Free by [Pivot](https://www.pivotapp.ai) and Pure Procurement.
 
 Each skill turns a common procurement task into a short, structured answer you can share: compare supplier bids, decide whether to buy or build an AI tool, or pick the KPIs worth tracking. They're built for indirect spend and written in plain language, so business teams can use them too.
 
@@ -25,37 +25,26 @@ Each skill turns a common procurement task into a short, structured answer you c
 
 ## How to use them
 
-Each skill follows the open [Agent Skills](https://agentskills.io) format (a folder with a `SKILL.md` file), so the same folder works in every assistant that supports skills. If your plan doesn't support skills, use the one-file versions instead.
+Each skill follows the open [Agent Skills](https://agentskills.io) format (a folder with a `SKILL.md` file), so the same folder works in every assistant that supports skills.
 
-### If your assistant supports skills
+**You need a plan that supports skills.** Check the plans listed for your assistant below.
 
 1. Download this repository (**Code → Download ZIP**) and unzip it.
 2. Pick the skill folder you want, e.g. `rfp-evaluator`. Some assistants want it zipped: zip the whole folder, so the zip holds the skill folder with `SKILL.md` inside it.
 3. Add it to your assistant:
 - **Claude (every plan, Free included):** Customize → Skills → **+** → Upload a skill, then upload the zip. Code execution must be on (Settings → Capabilities). On Team and Enterprise plans, an owner may need to turn skills on. In Claude Code, copy the folder into `~/.claude/skills/`.
-- **ChatGPT (Business, Enterprise and Edu):** Plugins → Skills → Create → Upload from your computer. Your admin may need to turn on skill uploads.
-- **Gemini:** Customize → Skills, then upload the skill folder (on the web app or the Mac app).
+- **ChatGPT (Business, Enterprise and Edu plans):** Plugins → Skills → Create → Upload from your computer. Your admin may need to turn on skill uploads.
+- **Gemini (personal Google accounts and Google Workspace business plans):** Customize → Skills, then upload the skill folder (on the web app or the Mac app).
 4. Ask your question in a new chat. The assistant picks the right skill on its own.
 
-### If your plan doesn't support skills
+Menus and plans change often. If a step doesn't match what you see, check your assistant's help page on skills.
 
-Use the one-file versions in [`single-file`](single-file). Each holds a skill's instructions and all its supporting guides in one file, so it works in any assistant, on any plan.
-
-1. Download the file for the skill you want, e.g. `rfp-evaluator-skill.md`.
-2. Add it to a Project (in ChatGPT or Claude) and add this line to the Project's instructions: "For procurement questions, follow the attached skill files." Add your `procurement-context.md` to the same Project. If your plan has no Projects, attach the skill file (and your context file) at the start of the chat.
-3. Ask your question.
-
-Menus change often. If a step doesn't match what you see, check your assistant's help page on skills or projects.
-
-## What's in this repository
+## What's in each folder
 
 ```
 skill-name/
 ├── SKILL.md      # Instructions: when to use it, the steps, the rules and the output format
 └── references/   # Supporting guides some skills read (scoring scales, pricing, red flags…). Not every skill has one.
-
-single-file/
-└── skill-name-skill.md   # The same skill in one file, for plans without skills
 ```
 
 ## Credits
