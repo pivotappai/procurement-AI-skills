@@ -36,6 +36,8 @@ Two answers in the required format. Match the format and length, not the content
 
 Want the starting points? Attach an export of your invoices (invoice date, due date, paid date, PO number) and POs (PO date, request date). I'll calculate them.
 
+No context file yet: the `procurement-context` skill can build one, so you won't need to repeat these basics.
+
 ---
 
 ## Example 2: Savings without hurting quality
@@ -69,3 +71,5 @@ Want the starting points? Attach an export of your invoices (invoice date, due d
 **Assumptions:** €10k threshold for competition, €100k for total cost evaluation.
 
 Want the starting points? Attach your savings log (baseline, new price, volume) and a spend export by supplier with your contract list. I'll calculate what the data allows.
+
+No context file yet: the `procurement-context` skill can build one, so you won't need to repeat these basics.

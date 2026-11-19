@@ -1,6 +1,6 @@
 # Timing: when to measure, review and set targets
 
-Based on the Pure Procurement playbook's implementation plan. Fit everything to the user's planning rhythm (fiscal year, when objectives are set, when leadership reviews happen).
+Fit everything to the user's planning rhythm (fiscal year, when objectives are set, when leadership reviews happen).
 
 ## The sequence
 

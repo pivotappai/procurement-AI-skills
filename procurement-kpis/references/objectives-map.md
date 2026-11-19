@@ -1,6 +1,6 @@
 # Objectives map
 
-Match the user's situation to one row, then start from its pairs. Each set is 3–4 pairs (6–8 KPIs). Sets 2 and 4 adapt the Pure Procurement playbook's Examples D and A; the others follow the same logic.
+Match the user's situation to one row, then start from its pairs. Each set is 3–4 pairs (6–8 KPIs).
 
 If two situations apply, pick the main one and borrow at most one pair from the other. Stay at 8 KPIs or fewer. When a KPI already serves as a counterweight in another pair, count it once.
 
