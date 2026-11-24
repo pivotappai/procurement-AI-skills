@@ -11,7 +11,7 @@ By Pivot and Pure Procurement
 
 ## Overview
 
-This skill helps procurement teams pick the few KPIs worth tracking for their situation, and say when to measure each one. Every KPI comes with a counterweight, an owner and a review rhythm. The answer takes two minutes to read and is ready to share with a CFO. It's built for indirect spend.
+This skill helps procurement teams pick the few KPIs worth tracking for their situation, and say when to measure each one. Every KPI comes with a counterweight, an owner and a review rhythm.
 
 The skill recommends. Procurement decides which KPIs to adopt and which targets to set.
 
