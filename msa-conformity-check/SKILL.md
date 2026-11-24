@@ -13,7 +13,7 @@ By Pivot and Pure Procurement
 
 This skill checks a child contract (a SOW, order form or amendment) against its parent MSA before it's signed. It confirms the document belongs to that MSA, compares it clause by clause, and flags anything that contradicts the MSA, overrides it, adds something new, or leaves out what the MSA says every SOW must include. Then it gives a traffic light: 🟢 ready for signature, 🟠 send to Legal, or 🔴 back to the supplier.
 
-The signed MSA is the rulebook. The skill needs no company policy to work, so it's useful from day one. If the company's rules are available (a contract policy or `procurement-context.md`), it adds them on top: when Legal must review, and who approves and signs.
+The agreed MSA is the rulebook. The skill needs no company policy to work, so it's useful from day one. If the company's rules are available (a contract policy or `procurement-context.md`), it adds them on top: when Legal must review, and who approves and signs.
 
 Legal gets a SOW with every deviation already found and traced to both clauses. Procurement stops sending documents that were never ready. It's built for indirect spend: software, services, agencies, consulting and similar categories.
 
@@ -54,13 +54,15 @@ The skill checks. It doesn't give legal advice, and it doesn't approve anything.
 
 | Input | Needed? |
 |---|---|
-| The signed MSA, with any amendments | Must have |
+| The agreed MSA, with any amendments: signed, or the final version if it's being negotiated at the same time | Must have |
 | The document to check: SOW, order form or amendment | Must have |
 | Documents the MSA or SOW refers to: DPA, schedules, rate cards | Helpful (unread documents can't be checked) |
 | The company's rules: contract policy, procurement policy, or `procurement-context.md` | Optional (adds when Legal must review, and who approves and signs) |
 | The request: what was approved, value, owner | Optional (checks the SOW matches what was approved) |
 
-   **If the MSA is missing, ask for it and wait.** Without it there's nothing to check against. If the user only has an unsigned or older MSA, say so in the answer and label it "Assumption: checked against [version]".
+   **If the MSA is missing, ask for it and wait.** Without it there's nothing to check against.
+
+   **If the MSA isn't signed yet** (often a new supplier, with the MSA and the first SOW negotiated together), check against the final version anyway, and say so in the summary. The best possible outcome is 🟠: the MSA itself still needs Legal review. If the user only has an older version, label it "Assumption: checked against [version]".
 2. **Read both documents in full,** including schedules, annexes and footnotes. Overrides often sit in an SOW's "special terms" or "commercial terms" section.
 3. **Find the order of precedence:** the clause that says which document wins in a conflict. It's usually in the MSA, sometimes in the SOW. Note it: if the SOW wins, every deviation changes the contract.
 4. **Read the company's rules,** if they're attached or in the project. Don't ask for them: the check works without them. If there's no context file, mention once at the end that the `procurement-context` skill can create one.
@@ -85,8 +87,8 @@ The skill checks. It doesn't give legal advice, and it doesn't approve anything.
 **Goal:** One traffic light, and everything Legal and the supplier need.
 
 1. **Set the traffic light** using `references/outcomes.md`. There are three outcomes, and only three:
-   - 🟢 **Ready for signature:** belongs to the MSA, every clause conforms, nothing required is missing, and the company's rules don't require Legal
-   - 🟠 **Send to Legal:** any clause contradicts, overrides or adds to the MSA, a referenced document wasn't checked, or the company's rules require Legal
+   - 🟢 **Ready for signature:** the MSA is signed, the document belongs to it, every clause conforms, nothing required is missing, and the company's rules don't require Legal
+   - 🟠 **Send to Legal:** any clause contradicts, overrides or adds to the MSA, a referenced document wasn't checked, the MSA isn't signed yet, or the company's rules require Legal
    - 🔴 **Back to the supplier:** wrong MSA, parties or entity, dates outside the MSA's term, or the SOW misses what the MSA requires
 2. **Say why** in one line, naming the deciding points.
 3. **Prepare for Legal:** each deviation with both clauses side by side, most important first.
@@ -98,7 +100,7 @@ The skill checks. It doesn't give legal advice, and it doesn't approve anything.
 
 ## Rules
 
-1. **The MSA is the rulebook.** Judge the SOW against the signed MSA, not against market practice or what seems reasonable.
+1. **The MSA is the rulebook.** Judge the SOW against the agreed MSA, not against market practice or what seems reasonable.
 2. **Never invent.** Every finding must come from the documents or the user. If the SOW is silent, the MSA applies: mark it ✓ and don't flag it. Label assumptions "Assumption:".
 3. **Quote both sources.** Give the MSA clause and the SOW section for every deviation.
 4. **Check, don't advise.** Say what each document says and how they differ. Don't say whether a deviation is legally acceptable, and don't draft legal wording. Legal decides.
@@ -123,7 +125,7 @@ Everything outside the title and the tables must be 400 words at most. Keep tabl
 
 **Summary:** [Two or three sentences: what the SOW covers, value and term, which document wins in a conflict, and the main issue.]
 
-**Belongs to this MSA:** [✓ or ✗ for: MSA referenced, parties and entity, dates within the MSA's term.]
+**Belongs to this MSA:** [✓ or ✗ for: MSA signed, MSA referenced, parties and entity, dates within the MSA's term.]
 
 **Deviations**
 
