@@ -11,7 +11,7 @@ By Pivot and Pure Procurement
 
 ## Overview
 
-This skill builds a one-page file about how the company procures. The other procurement skills (rfp-evaluator, ai-build-or-buy, procurement-kpis, pre-legal-check) read it first, so users don't repeat the basics every time. 
+This skill builds a one-page file about how the company procures. The other procurement skills (rfp-evaluator, ai-build-or-buy, procurement-kpis, pre-legal-document-check) read it first, so users don't repeat the basics every time. 
 
 The skill collects and organizes what the user, their documents, and their tools say. It never guesses facts about the company.
 
