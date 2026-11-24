@@ -1,96 +1,99 @@
 # Worked examples
 
-Six short scenarios showing how the decision rules in `readiness.md` apply. The buyer is Acme, a fictional company; the suppliers are fictional too. Each shows the package, the key findings, the status, and the rule that sets it.
+Six short examples showing how the rules in `traffic-light.md` apply. The buyer is Acme, a fictional company; the suppliers are fictional too. Acme's Contract rules (in `procurement-context.md`) say:
 
-## 1. Complete package, no issues found → 🟢
+- Liability: supplier cap of at least 12 months' fees (preferred)
+- Auto-renewal: none above €50k (must-have)
+- DPA: required whenever the supplier processes personal data (must-have)
+- AI and data use: no training on Acme data (must-have)
+- Governing law: French law, Paris courts (preferred)
 
-**Package:** Northwind MSA (signed, 12 January 2026), amendment 1 (signed, 3 June 2026), SOW 4 (draft for signature), rate card (Schedule 2). Acme's contract policy supplied.
+## 1. Everything matches → 🟢
 
-**Findings:** SOW 4 references the MSA as amended, same entities, dates within the MSA's term. Rates match Schedule 2. The MSA meets every documented position in the policy. SOW 4 includes the scope, acceptance criteria and milestones the MSA requires.
+**MSA:** Northwind Analytics MSA, €40k a year. Complete, DPA attached, every key term matches the policy.
 
-**Status:** 🟢 Ready for Legal. Rule: no 🔴 or 🟡 finding, every check done.
-
-```
-**Readiness: 🟢 Ready for Legal**
-Package complete; no issues found in the material supplied.
-**Legal handoff brief:** None identified.
-```
-
-## 2. Complete package, liability departure → 🟢, flagged first
-
-**Package:** As in example 1, but the MSA caps the supplier's liability at fees paid in the previous 3 months (MSA, clause 9.2). Acme's policy requires at least 12 months' fees (Contract rules, Liability).
-
-**Findings:** Everything is present and consistent. One departure from policy on liability.
-
-**Status:** 🟢 Ready for Legal. Rule: legal-judgment findings don't change the status. The package is ready for Legal to assess the departure.
+**Light:** 🟢 Send to Legal. Rule: no gap and no departure.
 
 ```
-**Readiness: 🟢 Ready for Legal**
-Package complete; one departure from policy for Legal to assess (liability).
-**Legal handoff brief:**
-1. Liability cap: MSA clause 9.2 "fees paid in the three (3) months preceding the claim"; policy "at least 12 months' fees". Departure from policy.
+**🟢 Send to Legal**
+Complete, and every key term matches your contract rules.
+**Note for Legal:** Checked parties, term, renewal, payment, liability, data protection, AI use and governing law against Acme's Contract rules. No issues found.
 ```
 
-## 3. Unclear pricing decision → 🟡
+## 2. Liability below the preferred cap → 🟡
 
-**Package:** Brightline MSA (signed), order form OF-0042 (draft). The order form offers two options: 150 seats on an annual prepaid fee, or 150 seats billed monthly at a higher rate (section 2). The approved request was for 100 seats.
+**MSA:** As in example 1, but the cap is 3 months' fees (clause 9.2).
 
-**Findings:** The order form belongs to the MSA, and the governing terms are clear. Two business questions: which pricing option, and why 150 seats rather than 100.
-
-**Status:** 🟡 Clarification needed. Rule: a business detail needs a decision before Legal can assess the final document.
+**Light:** 🟡 Send to Legal, with flags. Rule: the liability rule is preferred, so the departure is Legal's call, not the supplier's homework.
 
 ```
-**Readiness: 🟡 Clarification needed**
-Pricing option and seat count need a business decision.
-**Blockers and clarifications**
-- Choose a pricing option (order form, section 2) · Owner: business owner · Next action: confirm the option, then ask the supplier for a single-option order form
-- 150 seats against 100 approved · Owner: business owner · Next action: confirm the quantity, or raise a new approval
+**🟡 Send to Legal, with flags**
+Complete; one term departs from a preferred position (liability).
+**Brief for Legal:**
+1. Liability: MSA clause 9.2 "fees paid in the three (3) months preceding the claim"; policy: at least 12 months' fees (preferred). Departs from policy.
 ```
 
-## 4. Missing parent MSA → 🔴
+## 3. Missing DPA and auto-renewal → 🔴, with the email
 
-**Package:** SOW 2 and order form OF-0117 from Kestrel Consulting. Both say they're governed by "the Master Services Agreement dated 3 March 2025". No MSA supplied.
+**MSA:** Harbor Data MSA, €84k a year, for a service handling employee data. Clause 12 refers to a DPA "available on request", not attached. Clause 11.2 renews automatically for 12 months. Clause 18 sets English law.
 
-**Findings:** The governing terms can't be established. The SOW and the order form can be checked against each other (same parties, consistent fees), but not against the MSA.
-
-**Status:** 🔴 Blocked for routine review. Rule: parent MSA missing when SOWs or order forms are supplied.
+**Light:** 🔴 Don't send yet. Rule: a missing document and a broken must-have. The governing law departure is yellow, so it goes to Legal, not into the email.
 
 ```
-**Readiness: 🔴 Blocked for routine review**
-The MSA dated 3 March 2025, which governs both documents, wasn't supplied.
-Not checked: MSA terms, precedence, policy conformity, SOW and order form against the MSA.
-**Blockers and clarifications**
-- Missing MSA (SOW 2, section 1; OF-0117, header) · Owner: procurement · Next action: find the signed MSA and any amendments in the contract repository, or ask the supplier
+**🔴 Don't send yet**
+The DPA is missing, and the MSA renews automatically above €50k.
+
+**Email to the supplier** (review before sending)
+Subject: Harbor Data MSA: changes needed before our review
+
+Hi [Name],
+
+Thanks for sending the Master Services Agreement dated [date]. Before it goes to our legal team, we need a few changes and some missing information:
+
+1. Data processing (clause 12): the agreement refers to a data processing agreement that wasn't attached. Could you send it?
+2. Renewal (clause 11.2): the agreement renews automatically for 12 months. We can't accept automatic renewal for this agreement. Could you change it to renewal by written agreement?
+
+Could you send an updated version? Once we have it, we'll move on to our legal review.
+
+Thanks,
+[Your name]
+
+**For Legal, once the supplier has replied:**
+1. Governing law: MSA clause 18 "English law"; policy: French law, Paris courts (preferred). Departs from policy.
 ```
 
-## 5. No company policy supplied → policy not checked, other checks run
+## 4. Policy doesn't mark non-negotiable rules → 🟡
 
-**Package:** Harbor Data MSA (signed), order form OF-0210 (draft). No contract policy, playbook or context file.
+**MSA:** Kestrel Consulting MSA with automatic renewal (clause 7). The company's contract policy says "we avoid auto-renewal" but doesn't mark any rule as must-have.
 
-**Findings:** The order form belongs to the MSA. It adds a 12-month auto-renewal with 90 days' notice (section 5), which the MSA doesn't have: an additional term for Legal. Everything else is consistent.
-
-**Status:** 🟢 Ready for Legal, with the scope disclosed. Rule: no policy is not a blocker; the status comes from the other findings, and the auto-renewal is a legal-judgment finding.
+**Light:** 🟡 Send to Legal, with flags. Rule: unmarked rules count as preferred, so only gaps can make it red.
 
 ```
-**Readiness: 🟢 Ready for Legal**
-Package complete; one additional term for Legal. Policy conformity not checked.
-Not checked: policy conformity (no policy supplied).
-**Legal handoff brief:**
-1. Auto-renewal: MSA silent (clause 3, Term); order form section 5 "renews automatically for successive 12-month periods unless terminated on 90 days' notice". Additional term.
+**🟡 Send to Legal, with flags**
+Complete; auto-renewal departs from your policy.
+Your policy doesn't mark which rules are non-negotiable, so departures are flagged for Legal rather than sent back to the supplier.
 ```
 
-## 6. Red package with an urgent legal concern → escalate anyway
+## 5. No policy supplied → partial check
 
-**Package:** Two versions of the Vantage MSA (v2 and v3), neither marked final or signed, and SOW 1 (draft). Go-live is next Monday, per the cover note. Acme's policy forbids suppliers training AI models on company data.
+**MSA:** Brightline MSA. The user says to go ahead without a policy. The MSA names "Acme Group" instead of the buying entity.
 
-**Findings:** The governing version can't be established. SOW 1, section 7, lets the supplier "use Customer Data to train and improve its models". That departs from Acme's policy whichever MSA version governs.
-
-**Status:** 🔴 Blocked for routine review, with the urgent escalation flag. Rule: governing version can't be established → 🔴. The AI data-use clause, with go-live in days, warrants escalation regardless.
+**Light:** 🔴 Don't send yet, from the gaps only. Rule: without a policy, only missing items can be checked, and 🟢 isn't possible.
 
 ```
-**Readiness: 🔴 Blocked for routine review**
-Two MSA versions (v2, v3) and no way to tell which governs.
-**Urgent: escalate to Legal now.** SOW 1, section 7, lets the supplier train its models on Acme data, against Acme's AI policy. Go-live is next Monday.
-**Blockers and clarifications**
-- Governing MSA version unclear · Owner: procurement · Next action: confirm with the supplier which version was signed, and get the signed copy
+**Brightline MSA: partial check (no company policy)**
+**🔴 Don't send yet**
+The buying entity is wrong. Key terms weren't checked against a policy: attach your contract policy or procurement context for a full check.
+```
+
+## 6. Must-have broken and go-live is close → 🔴 with an urgent flag
+
+**MSA:** Vantage MSA. Clause 8.4 lets the supplier "use Customer Data to train and improve its models". The user mentions go-live is next Monday.
+
+**Light:** 🔴 Don't send yet, plus the urgent flag. Rule: a broken must-have makes it red; the AI data-use issue with go-live days away also warrants telling Legal straight away.
+
+```
+**🔴 Don't send yet**
+The MSA lets the supplier train models on Acme data, which your policy doesn't allow.
+**Urgent: tell Legal now.** Clause 8.4 allows model training on Acme data, and go-live is next Monday.
 ```

@@ -1,113 +1,57 @@
 # Checklist
 
-Four parts: the package and its versions, how the documents relate, the MSA against the company's policy, and related documents against each other.
+Two parts: the information and documents an MSA needs, and the clauses to compare with the company's policy.
 
-## Part 1: Inventory, completeness and versions
+## Part 1: Information and documents
 
-Record each document in the **Review scope** table.
+If any of these is missing or unclear, the issue type is **Missing info** or **Missing document**. Both make the light 🔴.
 
-| Check | What to record | Watch for |
+| Item | Check | Watch for |
 |---|---|---|
-| **Type** | MSA, amendment, SOW, order form, schedule, DPA, rate card, other | A document titled "Agreement" that's really an order form, or the reverse |
-| **Date and version** | Date on the document, version number, "final" or "draft" marks | No date; several versions with the same title |
-| **Signed or draft** | Signature blocks completed, or an e-signature certificate | Blank signature blocks; one party signed only. If unclear, write "Unclear" |
-| **Parties** | Full legal names of both parties | A brand name instead of a legal name; a different entity from the other documents |
-| **Referenced documents** | Every document, schedule or link mentioned | "As set out in Schedule 3" with no Schedule 3; terms at a URL; "DPA available on request" |
-| **Amendment history** | Each amendment, its number and date, and what it changes | Amendment 2 supplied but not amendment 1; an amendment that refers to an MSA version not supplied |
+| **Parties** | Supplier's full legal name and the company's buying entity | The parent company instead of the entity that buys and pays; a brand name instead of a legal name |
+| **Scope** | What's bought, or how orders will define it | "As described in the proposal" with the proposal not attached |
+| **Price** | Prices, currency, one-off fees, or how orders will set them | "Then-current rates"; fees only in a missing schedule |
+| **Term** | Start date, end date or length | No end date; a start date before signature |
+| **Renewal and notice** | Whether it renews, for how long, and the notice to stop it | Renewal terms left to a future order |
+| **Payment** | Payment terms, invoicing entity, currency | One invoice for several entities |
+| **Signatures** | Signature blocks for both parties, with the right entity | Signature block for the wrong entity |
+| **Referenced documents** | Every document the MSA relies on is attached | Terms at a URL, "DPA available on request", missing schedules |
 
-**Missing documents.** For each missing document, say who refers to it (document and clause) and what can't be checked without it.
+Never assume a document is signed, current or approved. If it isn't clear, write "Unclear".
 
-**Never assume** a document is signed, current or approved. Don't take a cover email's word for it either: the document itself is the evidence.
+## Part 2: Clauses to compare with the policy
 
-## Part 2: Relationships and governing terms
+For each clause, write what the MSA says and what the policy says, then mark it:
 
-### Does each SOW or order form belong to this MSA?
-
-| Check | Look in | Watch for |
+| Result | Type in the table | Light |
 |---|---|---|
-| **MSA referenced** | Opening, definitions, "this SOW is governed by…" | No MSA named; a different MSA; an older version; "the supplier's standard terms" |
-| **Same parties and entities** | Party blocks, signature blocks | A different supplier entity, or a different company entity from the MSA |
-| **Dates** | Start and end dates; the MSA's term and survival clauses | Work starting before the MSA, or running past its end. Before flagging, check whether the MSA lets existing SOWs continue after it ends |
+| The policy requires the clause and the MSA doesn't have it | **Missing clause** | 🔴 |
+| The MSA breaks a rule the policy marks as non-negotiable | **Breaks a must-have** | 🔴 |
+| The MSA differs from a preferred position | **Departs from policy** | 🟡 |
+| The policy has no position on it, and it's unusual or high-risk | **Not in policy** | 🟡 |
+| The MSA meets the policy | Don't list it | — |
 
-### Separate engagements
+Only treat something as required or non-negotiable if the policy says so. Don't add requirements, and don't use "market standard" as a substitute.
 
-Several SOWs under one MSA are usually separate engagements. Differences between them (rates, teams, deliverables, dates) are not conflicts. Only compare documents that cover the same engagement, such as a SOW and its change order, or an order form and its renewal.
+| Clause | What the policy usually sets | Watch for |
+|---|---|---|
+| **Contract length** | Maximum length, or who approves longer terms | A long initial term, or renewals that add up |
+| **Auto-renewal and notice** | Whether auto-renewal is allowed; longest notice | Renewal for the full original term; notice of 90 days or more |
+| **Payment terms** | Standard payment terms | Shorter terms, high late fees, payment in advance |
+| **Price increases** | Cap on increases | Uncapped increases; "indexed" with no index named |
+| **Liability** | Minimum cap on the supplier's liability; what's excluded | A cap lower than fees paid; data breaches excluded |
+| **Indemnities** | Which claims the supplier must cover (e.g. IP) | Indemnity only from the company |
+| **Termination** | Right to exit; notice; fees on exit | No termination for convenience; fees for the rest of the term |
+| **Intellectual property** | Who owns deliverables and company data | Supplier keeps ownership of deliverables or company data |
+| **Confidentiality** | Mutual; how long it lasts | One-way, or ends with the contract |
+| **Data protection** | When a DPA is required | No DPA where personal data is involved |
+| **Data location** | Where data may be stored | Transfers outside the allowed region without safeguards |
+| **Security** | Required certifications (e.g. SOC 2 Type II, ISO 27001) | Certification "in progress"; supplier can change security terms on notice |
+| **AI and data use** | Whether the supplier may use company data to train models | Supplier may train or improve models on company data |
+| **Changes to terms** | Changes only in writing, signed by both | Supplier can change terms "by posting an update" |
+| **Governing law** | Accepted law and courts | A law or court the policy doesn't list |
+| **Sector rules** | Clauses the sector requires (e.g. DORA for critical ICT suppliers in EU financial services) | Missing audit rights or exit plans |
 
-### Governing terms
+## How to write an issue
 
-1. Find the precedence clause, usually in the MSA, sometimes in the SOW or order form.
-2. Note which document says it prevails: in general, or only for named clauses.
-3. Check each amendment: which clauses it replaces, and whether later documents refer to the amended version.
-4. If two documents both say they prevail, or the precedence clause is missing, write "Unclear" and flag it for Legal. Don't decide which is enforceable.
-
-## Part 3: The MSA against the company's policy
-
-Only run this part if the user supplied a contract policy, legal playbook or `procurement-context.md` with Contract rules. Otherwise, write in the scope: "Not checked: policy conformity (no policy supplied)."
-
-For each provision, compare the MSA with the policy:
-
-- The policy requires it and the MSA doesn't have it: **missing required provision**
-- The MSA says something different from a documented position: **departure from policy**
-- The policy has no position: don't flag it as a departure. List it for Legal only if it's unusual or high-risk, labelled "Not covered by the policy"
-
-Only treat something as required if the policy says so. Don't add requirements, and don't use "market standard" as a substitute.
-
-| Provision | What the policy usually sets |
-|---|---|
-| **Contract length and renewal** | Maximum term; whether auto-renewal is allowed; longest notice |
-| **Payment and price increases** | Standard payment terms; cap on increases |
-| **Liability** | Minimum cap on the supplier's liability; what's excluded from the cap |
-| **Indemnities** | Which claims the supplier must cover |
-| **Termination** | Right to exit; notice; fees on exit |
-| **Intellectual property** | Who owns deliverables and company data |
-| **Confidentiality** | Mutual; how long it lasts |
-| **Data protection and location** | When a DPA is required; where data may be stored |
-| **Security** | Required certifications |
-| **AI and data use** | Whether the supplier may use company data to train models |
-| **Governing law** | Accepted law and courts |
-| **Sector rules** | Clauses the sector requires, e.g. DORA for critical ICT suppliers in EU financial services |
-
-## Part 4: Related documents against each other
-
-Compare each SOW or order form with its MSA, as amended. Classify each difference:
-
-- **Contradiction:** says something different from the MSA (e.g. Net 15 against Net 45)
-- **Express override:** says it replaces an MSA term ("notwithstanding the MSA…")
-- **Additional term:** something the MSA doesn't cover (e.g. a new fee or an auto-renewal)
-
-| Topic | Watch for in the SOW or order form |
-|---|---|
-| **Payment** | Shorter payment terms; payment in advance; invoicing before acceptance |
-| **Fees and rates** | Rates above the rate card; new fees (set-up, travel, rush); a different currency |
-| **Price increases** | A higher cap than the MSA's, or increases the MSA doesn't allow |
-| **Renewal** | Auto-renewal the MSA doesn't have; longer notice |
-| **Termination** | No termination for convenience; termination fees |
-| **Liability** | A lower cap for this engagement; new exclusions |
-| **Indemnities** | Indemnities removed or narrowed |
-| **Intellectual property** | Supplier keeps ownership of deliverables |
-| **Confidentiality** | Shorter or one-way |
-| **Data protection** | New personal data processing not covered by the DPA; new sub-processors or locations |
-| **Acceptance and change control** | Deemed acceptance after a few days; changes the supplier can make alone |
-| **Subcontracting and staff** | Subcontractors without consent |
-| **Governing law** | A different law or court |
-
-### Project details are not conflicts
-
-Scope, deliverables, milestones, named staff, locations, quantities and dates are what a SOW is for. Don't flag them as differences from the MSA unless they change a governing term (for example, a "milestone" that triggers payment in advance when the MSA says payment in arrears).
-
-A SOW doesn't need to repeat the MSA. If it's silent on a topic, the MSA applies.
-
-### Required SOW content
-
-If the MSA or the policy lists what every SOW must include (scope, acceptance criteria, rates, milestones, term, signatures), check each item and flag what's missing. Only check what's actually listed.
-
-### Contract issues or business questions?
-
-| It's a contract issue when… | It's a business question when… |
-|---|---|
-| A document changes a governing term (liability, IP, payment terms, data) | The commercial content needs a decision or explanation (which pricing option, why the quantity differs from the request, which entity pays) |
-| Goes to: **Legal handoff brief** | Goes to: **Blockers and clarifications**, owner: business owner or procurement |
-
-## How to write a finding
-
-One row per finding, with both sources and the passages side by side: "Payment: MSA clause 6.1 'payable within 45 days'; Order form section 3 'payable within 15 days'. Contradiction. MSA clause 2.3 says the MSA prevails."
+One row per issue, with both sources: "Auto-renewal: renews for 12 months unless cancelled 90 days before (MSA, clause 11.2). Policy: no auto-renewal above €50k, must-have (Contract rules). Breaks a must-have."
