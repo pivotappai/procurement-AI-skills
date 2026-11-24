@@ -1,9 +1,9 @@
 ---
 name: pre-legal-check
-description: Pre-legal document checker. Checks an incoming supplier MSA against the company's contract policy or legal playbook before it goes to Legal - finds missing information, missing documents, missing required clauses and terms that depart from the policy - and gives a traffic light - red, don't send yet (with a ready-to-send email asking the supplier for the changes); yellow, send to Legal with flags; green, send to Legal. Use when someone shares a supplier MSA and asks for a pre-legal check, whether it meets the company's policy, or what to fix before sending it to Legal. Not for SOWs or order forms.
+description: Pre-legal document check. Checks an incoming supplier MSA against the company's contract policy or legal playbook before it goes to Legal - finds missing information, missing documents, missing required clauses and terms that depart from the policy - and gives a traffic light - red, don't send yet (with a ready-to-send email asking the supplier for the changes); yellow, send to Legal with flags; green, send to Legal. Use when someone shares a supplier MSA and asks for a pre-legal check, whether it meets the company's policy, or what to fix before sending it to Legal. Not for SOWs or order forms.
 ---
 
-# Pre-legal document checker
+# Pre-legal document check
 
 By Pivot and Pure Procurement
 
