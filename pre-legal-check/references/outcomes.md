@@ -6,38 +6,43 @@ Go through these in order and stop at the first that applies.
 
 | Order | If… | Outcome |
 |---|---|---|
-| 1 | The SOW doesn't reference this MSA, the parties or entity don't match, the dates fall outside the MSA's term, the MSA has expired, or the SOW misses something the MSA requires of every SOW | 🔴 **Back to the supplier** |
-| 2 | Any clause contradicts, overrides or adds to the MSA, a referenced document wasn't attached, the MSA isn't signed yet, or the company's rules require Legal for this value or type | 🟠 **Send to Legal** |
-| 3 | The MSA is signed, everything belongs, conforms and is complete, and the company's rules (if any) don't require Legal | 🟢 **Ready for signature** |
+| 1 | Any **Missing info** or **Missing clause**, a referenced document isn't attached, or an attached order form or SOW doesn't match the MSA | 🔴 **Fix before Legal** |
+| 2 | Any term **Departs from policy** or is **Not in policy** | 🟠 **Send to Legal, with flags** |
+| 3 | Everything is there, and every key term meets the policy | 🟢 **Send to Legal, no issues found** |
 
 Notes:
 
-- **🟠 can be good news.** If the company's rules require Legal for this value but there are no deviations, say so: "🟠 Send to Legal: required above €50k. No deviations found." Legal can then review faster.
-- **MSA not signed yet.** Check the SOW against the final MSA anyway. Even with no deviations, the outcome is 🟠: "🟠 Send to Legal: the MSA isn't signed yet and needs Legal review. The SOW matches it."
-- **Commercial deviations.** Contradictions on price, payment or invoicing still go to Legal (🟠), but procurement can usually fix them with the supplier at the same time. Add a question for the supplier for each.
-- **Several problems.** 🔴 wins over 🟠. Still list the deviations Legal will need to see, so the document only makes the trip once.
-- **No company rules.** The traffic light still works: the MSA is the rulebook. Write "Approvals and signer: Not checked: no company rules provided."
+- **Every MSA still goes to Legal.** The traffic light says what to do first, not whether Legal is needed. 🟢 means Legal can review faster, because nothing was found.
+- **🔴 wins over 🟠.** Still list the departures in the issues table, so Legal sees them once the supplier has fixed the gaps, and the contract only makes one trip.
+- **Commercial departures.** Payment terms, auto-renewal, price increases or contract length can usually be raised with the supplier straight away. Add a question for each, as well as listing it for Legal.
+- **Partial check (no policy).** Only 🔴 or 🟠 are possible: 🔴 if information is missing or documents don't match, 🟠 otherwise.
+
+## Ordering the issues for Legal
+
+Most important first:
+
+1. Missing information and missing required clauses
+2. Departures on risk: liability, indemnities, IP, data protection, security, governing law
+3. Departures on commercial terms: payment, renewal, price increases, contract length
+4. Terms not in the policy
 
 ## Questions for the supplier
 
-Five at most, blocking points first. Each question names both clauses.
+Five at most, missing items first. Each question names the clause and what's needed.
 
 | Problem | Question to send |
 |---|---|
-| **Wrong or no MSA referenced** | "Please reference the MSA dated [date] between [parties] in the SOW." |
-| **Wrong entity** | "Please issue the SOW to [entity], the party to the MSA." |
-| **Dates outside the MSA's term** | "The SOW runs to [date], after the MSA ends on [date]. Please align the dates, or we'll need to extend the MSA first." |
-| **Missing required item** | "The MSA (clause [x]) requires each SOW to include [item]. Please add it." |
-| **Commercial contradiction** | "Section [x] says [y], but the MSA (clause [z]) says [w]. Please align the SOW with the MSA." |
-| **New fee or term** | "Section [x] adds [fee or term], which isn't in the MSA. Please remove it, or explain why it's needed." |
-| **Missing document** | "Please send [document]. The SOW refers to it (section [x]) but it wasn't included." |
+| **Wrong or missing entity** | "Please issue the contract to [entity], which is the entity buying and paying." |
+| **Missing document** | "Please send [document]. The MSA refers to it (clause [x]) but it wasn't included." |
+| **Terms at a link** | "Please attach the terms referred to at [link], or confirm they don't apply." |
+| **Missing required clause** | "Our policy requires a [clause] clause. Please add one." |
+| **Missing DPA** | "The service involves personal data. Please send your data processing agreement." |
+| **Certification** | "Please send your current [certification] report, or the date it's expected." |
+| **Auto-renewal** | "Can renewal require written agreement from both parties, or the notice be shortened to [x] days?" |
+| **Payment terms** | "Our standard payment terms are [x]. Can you align the contract?" |
+| **AI and data use** | "Please confirm our data won't be used to train or improve your models." |
+| **Order form doesn't match** | "The order form says [x], the MSA says [y]. Please confirm which applies and correct the document." |
 
-Don't send questions about liability, indemnities, IP, data protection or governing law to the supplier yourself. List them under **For Legal**: Legal decides how to negotiate them.
+Don't send questions about liability, indemnities, IP or governing law to the supplier yourself. Leave them in the issues table for Legal: Legal decides how to negotiate them.
 
-## Writing for Legal
-
-One line per deviation, most important first: the topic, both clauses, the type, and which document wins. "Liability: capped at 12 months' fees (MSA, clause 9.2); capped at fees paid under this SOW (SOW, section 8). Overrides. The SOW wins for this clause (SOW, section 1.2)."
-
-Rank by impact: overrides first (they change the contract), then contradictions where the SOW wins, then new terms, then contradictions where the MSA wins.
-
-Keep a neutral tone: write "Contradicts" or "Not stated", never "unacceptable" or "dangerous".
+Keep a neutral tone: write "Not stated" or "Departs from policy", never "unacceptable" or "dangerous".
