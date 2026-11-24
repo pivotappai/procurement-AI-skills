@@ -10,7 +10,7 @@ By Pivot and Pure Procurement
 
 ## Overview
 
-This skill helps decide, fairly and quickly, how to get an AI capability: buy a tool, build it, add AI to a tool the company already uses, or combine these. It works for procurement teams checking a request that lands on their desk, and for business teams (marketing, support, HR, legal) preparing one. The answer takes three minutes to read.
+This skill helps decide how to get an AI capability: buy a tool, build it, add AI to a tool the company already uses, or combine these. It works for procurement teams checking a request that lands on their desk, and for business teams (marketing, support, HR, legal) preparing one. The answer takes three minutes to read.
 
 Procurement always makes the final call. This skill prepares that decision; it never approves anything.
 
