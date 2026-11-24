@@ -79,7 +79,7 @@ From an ERP or procurement tool, take totals and counts only: never invoice-leve
 
 Accept short answers. Only ask a follow-up if an answer is unclear.
 
-**Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: entities that buy mostly on cards, spend totals and main categories, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, contract rules (clauses every contract needs, liability, auto-renewal, when a data processing agreement is needed, governing law, when Legal reviews), how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, contract-length limits. If the user says later, finish with what you have.
+**Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: entities that buy mostly on cards, spend totals and main categories, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, contract rules (clauses every contract needs, liability, auto-renewal, when a data processing agreement is needed, governing law, when Legal reviews, and which of these are non-negotiable), how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, contract-length limits. If the user says later, finish with what you have.
 
 ### Phase 4: Confirm and deliver
 
@@ -143,6 +143,7 @@ Last updated: [date] · Filled in by: [role]
 - Limits on contract length or payment terms:
 
 ## Contract rules
+[Add "(must-have)" after any rule that can't be negotiated.]
 - Whose terms we sign on: [Our own / Supplier's / Either, and when]
 - When Legal must review: [Value, contract type, or non-standard terms]
 - Clauses every contract must include:
