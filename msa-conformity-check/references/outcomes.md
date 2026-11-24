@@ -7,12 +7,13 @@ Go through these in order and stop at the first that applies.
 | Order | If… | Outcome |
 |---|---|---|
 | 1 | The SOW doesn't reference this MSA, the parties or entity don't match, the dates fall outside the MSA's term, the MSA has expired, or the SOW misses something the MSA requires of every SOW | 🔴 **Back to the supplier** |
-| 2 | Any clause contradicts, overrides or adds to the MSA, a referenced document wasn't attached, or the company's rules require Legal for this value or type | 🟠 **Send to Legal** |
-| 3 | Everything belongs, conforms and is complete, and the company's rules (if any) don't require Legal | 🟢 **Ready for signature** |
+| 2 | Any clause contradicts, overrides or adds to the MSA, a referenced document wasn't attached, the MSA isn't signed yet, or the company's rules require Legal for this value or type | 🟠 **Send to Legal** |
+| 3 | The MSA is signed, everything belongs, conforms and is complete, and the company's rules (if any) don't require Legal | 🟢 **Ready for signature** |
 
 Notes:
 
 - **🟠 can be good news.** If the company's rules require Legal for this value but there are no deviations, say so: "🟠 Send to Legal: required above €50k. No deviations found." Legal can then review faster.
+- **MSA not signed yet.** Check the SOW against the final MSA anyway. Even with no deviations, the outcome is 🟠: "🟠 Send to Legal: the MSA isn't signed yet and needs Legal review. The SOW matches it."
 - **Commercial deviations.** Contradictions on price, payment or invoicing still go to Legal (🟠), but procurement can usually fix them with the supplier at the same time. Add a question for the supplier for each.
 - **Several problems.** 🔴 wins over 🟠. Still list the deviations Legal will need to see, so the document only makes the trip once.
 - **No company rules.** The traffic light still works: the MSA is the rulebook. Write "Approvals and signer: Not checked: no company rules provided."
