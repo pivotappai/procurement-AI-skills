@@ -25,7 +25,7 @@ The skill compares and recommends. Procurement and the evaluation panel make the
 
 ---
 
-## When to use this skill
+## How to use this skill
 
 **Example requests:**
 
