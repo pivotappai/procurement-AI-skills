@@ -7,7 +7,6 @@ description: Pressure-tests a request for an AI tool or capability and recommend
 
 By Pivot and Pure Procurement
 
----
 
 ## Overview
 
