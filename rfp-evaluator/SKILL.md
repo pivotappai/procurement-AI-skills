@@ -1,6 +1,6 @@
 ---
 name: rfp-evaluator
-description: Compares supplier responses to an RFP, tender or quote request side by side, checks must-haves, scores each criterion from what suppliers actually wrote, puts prices on the same basis, flags red flags, and recommends a shortlist with questions to clarify. Use when someone has received supplier proposals, bids or quotes and asks to compare, score, evaluate or shortlist them, or wants to know which supplier is best.
+description: Compares supplier responses to an RFP side by side, checks must-haves, scores each criterion from what suppliers actually wrote, puts prices on the same basis, flags red flags, and recommends a shortlist with questions to clarify. Use when someone has received supplier proposals, bids or quotes and asks to compare, score, evaluate or shortlist them, or wants to know which supplier is best.
 ---
 
 # RFP evaluator
@@ -10,7 +10,7 @@ By Pivot and Pure Procurement
 
 ## Overview
 
-This skill gives procurement a side-by-side comparison of supplier responses to an RFP, tender or quote request. Every score is traced to what the supplier actually wrote, prices are put on the same basis, and red flags are named, so the team can shortlist and clarify quickly. It's built for indirect spend: IT hardware, software, services, facilities, agencies and similar categories.
+This skill gives procurement a side-by-side comparison of supplier responses to an RFP. Every score is traced to what the supplier actually wrote, prices are put on the same basis, and red flags are named, so the team can shortlist and clarify quickly. It's built for indirect spend: IT hardware, software, services, facilities, agencies and similar categories.
 
 The skill compares and recommends. Procurement and the evaluation panel make the final decision.
 
