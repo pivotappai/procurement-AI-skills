@@ -5,7 +5,7 @@ description: Builds or updates a one-page procurement context file (procurement-
 
 # Procurement context
 
-By Pivot × Pure Procurement
+By Pivot and Pure Procurement
 
 ---
 
