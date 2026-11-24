@@ -24,7 +24,7 @@ The skill collects and organizes what the user, their documents, and their tools
 - Write the file in a fixed format the other skills can read
 - Update an existing file when something changes
 
-## When to use this skill
+## How to use this skill
 
 Use it once before the other procurement skills, then again whenever something changes: a new entity, system, approver, policy or priority.
 Example requests:
