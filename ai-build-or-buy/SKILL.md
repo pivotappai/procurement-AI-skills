@@ -1,7 +1,6 @@
 ---
 name: ai-build-or-buy
 description: Pressure-tests a request for an AI tool or capability and recommends whether to buy it, build it, add AI to a tool already in use, or combine these. Use when someone asks whether to buy an AI tool, compares AI vendor proposals or pricing, questions an AI vendor's claims, hears "we could just build it with AI", or needs an AI request ready for procurement. 
----
 
 # AI build or buy
 
