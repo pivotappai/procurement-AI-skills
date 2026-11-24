@@ -5,7 +5,7 @@ description: Pressure-tests a request for an AI tool or capability and recommend
 
 # AI build or buy
 
-By Pivot × Pure Procurement
+By Pivot and Pure Procurement
 
 ---
 
