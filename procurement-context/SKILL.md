@@ -31,9 +31,6 @@ Example requests:
 
 - "Set up our procurement context."
 - "Create the context file for the procurement skills."
-- "Here's our procurement policy. Build our context from it."
-- "We moved to a new ERP in Germany. Update our context."
-- "Give me a blank procurement context template to fill in."
 
 ## Framework
 
