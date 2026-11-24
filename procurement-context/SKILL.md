@@ -1,6 +1,6 @@
 ---
 name: procurement-context
-description: Builds or updates a one-page procurement context file (procurement-context.md) covering the company's entities, systems, spend, buying rules, approvers, AI and security rules, priorities and planning rhythm, so the other procurement skills don't have to ask. Use when someone asks to set up, create, fill in or update their procurement context, or when another procurement skill says there's no context file. Can pull answers from attached documents or connected tools, then asks only for what's missing.
+description: Builds or updates a one-page procurement context file (procurement-context.md) covering the company's entities, systems, spend, buying rules, contract rules, approvers, AI and security rules, priorities and planning rhythm, so the other procurement skills don't have to ask. Use when someone asks to set up, create, fill in or update their procurement context, or when another procurement skill says there's no context file. Can pull answers from attached documents or connected tools, then asks only for what's missing.
 ---
 
 # Procurement context
@@ -11,13 +11,13 @@ By Pivot × Pure Procurement
 
 ## Overview
 
-This skill builds a one-page file about how the company procures. The other procurement skills (rfp-evaluator, ai-build-or-buy, procurement-kpis) read it first, so users don't repeat the basics every time. 
+This skill builds a one-page file about how the company procures. The other procurement skills (rfp-evaluator, ai-build-or-buy, procurement-kpis, pre-legal-check) read it first, so users don't repeat the basics every time. 
 
 The skill collects and organizes what the user, their documents, and their tools say. It never guesses facts about the company.
 
 **Key capabilities:**
 
-- Pull answers from attached documents (procurement policy, approval matrix, AI policy, org chart, spend export)
+- Pull answers from attached documents (procurement policy, contract policy or legal playbook, approval matrix, AI policy, org chart, spend export)
 - Pull answers from connected tools (document storage, ERP, procurement tools), with the user's permission
 - Ask only for what's still missing, in two short rounds at most
 - Flag conflicting or outdated sources instead of picking one silently
@@ -44,13 +44,13 @@ Example requests:
 1. **Existing context file.** If procurement-context.md is attached or in the project, switch to update mode (see Phase 4).
 2. **Attached documents.** Read every attached document in full.
 3. **Connected tools.** If a document, ERP or procurement tool is connected, ask once before reading: "I can see [tools] connected. Want me to look there first? I'll only read, and I'll show you what I found before using it." If the user says no, don't read them.
-4. **Nothing available.** Offer the fast path in one message: "I'll build a one-page context file the other procurement skills read, so you won't repeat yourself. If you have a procurement policy, approval matrix or AI policy, attach it and I'll pull the answers from it. Otherwise, I'll ask five quick questions."
+4. **Nothing available.** Offer the fast path in one message: "I'll build a one-page context file the other procurement skills read, so you won't repeat yourself. If you have a procurement policy, contract policy, approval matrix or AI policy, attach it and I'll pull the answers from it. Otherwise, I'll ask five quick questions."
 
 What to look for in each source:
 
 | Source | Look for | Fills |
 |---|---|---|
-| Documents, attached or in document storage (Drive, SharePoint, Notion, Confluence…) | Procurement policy, approval matrix or delegation of authority, AI policy, security or supplier requirements, org chart | Buying rules, Procurement team, Security, data and AI rules |
+| Documents, attached or in document storage (Drive, SharePoint, Notion, Confluence…) | Procurement policy, contract policy or legal playbook, approval matrix or delegation of authority, AI policy, security or supplier requirements, org chart | Buying rules, Contract rules, Procurement team, Security, data and AI rules |
 | ERP (NetSuite, SAP, Dynamics…) | Legal entities, currencies, total spend by supplier, invoices with and without a PO | Company basics, Systems and tools, Spend, How buying works today |
 | Procurement or P2P tool | Approval workflows, request channels, contracts, suppliers | Buying rules, How buying works today |
 
@@ -79,7 +79,7 @@ From an ERP or procurement tool, take totals and counts only: never invoice-leve
 
 Accept short answers. Only ask a follow-up if an answer is unclear.
 
-**Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: entities that buy mostly on cards, spend totals and main categories, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, contract-length limits. If the user says later, finish with what you have.
+**Round 2 (optional).** Show the draft, say how many fields are "Not stated", and offer to fill them now or later: entities that buy mostly on cards, spend totals and main categories, team size and roles, who builds internal tools, required certifications, where data must be stored, AI policy and who approves AI tools, contract rules (clauses every contract needs, liability, auto-renewal, when a data processing agreement is needed, governing law, when Legal reviews), how teams send requests to procurement, fiscal year, when objectives are set and when you report to leadership, contract-length limits. If the user says later, finish with what you have.
 
 ### Phase 4: Confirm and deliver
 
@@ -141,6 +141,15 @@ Last updated: [date] · Filled in by: [role]
 - Approval levels:
 - When quotes or an RFP are needed:
 - Limits on contract length or payment terms:
+
+## Contract rules
+- Whose terms we sign on: [Our own / Supplier's / Either, and when]
+- When Legal must review: [Value, contract type, or non-standard terms]
+- Clauses every contract must include:
+- Liability:
+- Auto-renewal and notice:
+- When a data processing agreement is needed:
+- Governing law and courts:
 
 ## Security, data and AI rules
 - Required certifications: [and for which suppliers]
