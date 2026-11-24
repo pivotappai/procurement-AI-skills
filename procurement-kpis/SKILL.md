@@ -5,7 +5,7 @@ description: Recommends a small, balanced set of procurement KPIs for indirect s
 
 # Procurement KPIs
 
-By Pivot × Pure Procurement
+By Pivot and Pure Procurement
 
 ---
 
