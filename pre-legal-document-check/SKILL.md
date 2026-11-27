@@ -16,7 +16,7 @@ Legal teams receive a steady flow of supplier MSAs to check against company poli
 This skill checks an incoming supplier MSA against the company's contract policy before it goes to Legal. It finds what's missing, what departs from the policy, and gives a traffic light:
 
 - 🔴 **Don't send yet:** the supplier has to fix something first. The skill writes the email to send them.
-- 🟡 **Send to Legal, with flags:** the MSA is complete, but some terms need Legal's judgment. The skill writes a short brief for Legal.
+- 🟡 **Send to Legal with flags:** the MSA is complete, but some terms need Legal's judgment. The skill writes a short brief for Legal.
 - 🟢 **Send to Legal:** the MSA is complete and matches the policy.
 
 Legal gets fewer, better-prepared MSAs, and keeps the judgment on every flagged term. **Green means ready for Legal, never approved or ready for signature.** The skill doesn't give legal advice or approve contracts.
